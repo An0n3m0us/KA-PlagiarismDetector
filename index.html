@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Viewer</title>
+    </head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
+
+    <style>
+
+        table {
+            font-size: 15px;
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 90%;
+            table-layout: fixed;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            max-width: 100px;
+            overflow-wrap: break-word;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+
+        table {
+            margin-top: 50px;
+        }
+
+    </style>
+
+    <body>
+
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Keys</th>
+                <th style="background-color:#7ffe00">0 ≥ x < 58</th>
+                <th style="background-color:#ffff00">58 ≥ x < 75</th>
+                <th style="background-color:#fe7f00">75 ≥ x < 87</th>
+                <th style="background-color:#fe007f">87 ≥ x ≤ 100</th>
+            </tr>
+        </thead>
+    </table>
+
+    <table align="center" id="table-container">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ratio</th>
+                <th>Partial Ratio</th>
+                <th>Token Sort</th>
+                <th>Partial Token Set</th>
+                <th>Q Ratio</th>
+                <th>Image similarity</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+
+    <script src="output.js"></script>
+
+    </body>
+</html>
